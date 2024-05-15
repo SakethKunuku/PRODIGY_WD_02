@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: whitesmoke;
+}
+
+h1 {
+    margin: 0px 0px 0px 10px;
+    user-select: none;
+}
+
+footer {
+    text-align: center;
+    user-select: none;
+    font-size: 1.2rem; /* Increase font size */
+    color: #FFF; /* Set text color to white */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add white radium color */
+}
+
+.container {
+    background-color: #9cabb4; /* Container background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Maximum width */
+    margin: 150px auto;
+    padding: 35px; /* Padding */
+    border-radius: 20px; /* Border radius */
+    transition: max-width 0.5s, box-shadow 0.5s; /* Transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow */
+}
+
+.container:hover {
+    max-width: 900px; /* Increased width on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
+}
+
+.controls button {
+    background-color: #FF4C29; /* Button background color */
+    margin: 10px 5px;
+    padding: 15px 30px; /* Increased button padding */
+    font-size: 1.2rem; /* Button font size */
+    border-radius: 8px; /* Button border radius */
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+    color: #FFF; /* Button text color */
+}
+
+.controls button:hover {
+    background-color: #72383d; /* Button background color on hover */
+    color: #FFF; /* Button text color on hover */
+}
+
+
+.time {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    user-select: none;
+    color: #d2dce6; /* Change color to gold */
+}
+
+.controls button {
+    background-color: #f2f2eb; /* Changed button background color to black */
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+    color: #401b1b; /* Changed button text color to white */
+}
+
+.controls button i {
+    margin-right: 8px; /* Adjust icon spacing */
+}
+
+.controls button:hover {
+    background-color: transparent;
+}
+
+.lapping h4 {
+    color: #FFD700; /* Change lap text color */
+    margin-bottom: 5px;
+}
+
+@media(max-width: 600px) {
+    .container {
+        max-width: 900%;
+    }
+    .time {
+        font-size: 3.5rem;
+    }
+    .controls button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .time {
+        font-size: 2rem;
+    }
+    .controls button {
+        padding: 6px 12px;
+        margin: 5px;
+    }
+}
+
+.stopwatch {
+    
+	width: 100%;
+	max-width: 900px;
+    max-height: 600px;
+	padding: 60px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #ab644b;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
